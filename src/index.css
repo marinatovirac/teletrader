@@ -1,13 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Center the component on the page */
+.CryptoPrices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.CryptoPrices header {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.CryptoPrices .buttons {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: normal;
+}
+
+/* Style the table */
+.CryptoPrices table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 580px;
+}
+
+.CryptoPrices th,
+.CryptoPrices td {
+  padding: 8px;
+  text-align: right;
+  border-bottom: 1px solid #ddd;
+}
+
+.CryptoPrices th {
+  background-color: #f2f2f2;
+}
+
+.CryptoPrices tr:hover {
+  background-color: #f5f5f5;
+}
+
+.CryptoPrices .nav-btn {
+  background-color: #41dfd4;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0px 0px 8px;
+  cursor: pointer;
+}
+
+.CryptoPrices .nav-btn:hover {
+  background-color: #2ea39b;
+}
+
+/* Style the login button */
+.CryptoPrices .standard-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.CryptoPrices .standard-btn:hover {
+  background-color: #3e8e41;
+}
+
+.CryptoPrices .add-favorite {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.CryptoPrices .remove-favorite {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 8px 0;
+  cursor: pointer;
 }
