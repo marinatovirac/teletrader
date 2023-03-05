@@ -1,5 +1,10 @@
 [[redirects]]
-  from = "/api/*"
-  to = "https://api-pub.bitfinex.com"
-  status = 200
-  force = false
+from = "/api/*"
+to = "https://api-pub.bitfinex.com/:splat"
+status = 200
+force = false
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
